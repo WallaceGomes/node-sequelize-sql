@@ -8,5 +8,6 @@ routes.get('/users', UserController.index);
 routes.post('/users', UserController.store);
 
 routes.post('/users/:user_id/address', AddressController.store);
+routes.get('/users/:user_id/address', AddressController.index)
 
 module.exports= routes;
